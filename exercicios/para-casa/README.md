@@ -1,7 +1,11 @@
-# Exercício de Casa 🏠 
+# Exercício de Casa 🏠
 
 Você foi escalada para criar o sistema para uma clínica veterinária.
-Para isso, precisará criar funções construtoras no modelo `Pseudoclassical Instantiation` para quatro tipos e objeto diferentes: 
+Para isso, precisará criar funções construtoras no modelo `Pseudoclassical Instantiation` para quatro tipos e objeto diferentes:
+
+// 4 funções contrutoras(Pseudoclassical)
+// Terei que recebeer essas caracteristicas como propriedades
+
 - [ ] Gatos
 - [ ] Cachorros
 - [ ] Animais exóticos
@@ -13,7 +17,7 @@ Para isso, precisará criar funções construtoras no modelo `Pseudoclassical In
     nome: "Pipoca",
     idade: 18, //em meses
     cor: "branco",
-    castrado: true,
+    castrado: true, //boolean
     historico: HistoricoMedico
 }
 ```
@@ -24,7 +28,7 @@ Para isso, precisará criar funções construtoras no modelo `Pseudoclassical In
     nome: "Aslam",
     idade: 42, //em meses
     cor: "preto",
-    castrado: false,
+    castrado: false, //boolean
     raça: "srd",
     historico: HistoricoMedico
 }
@@ -37,25 +41,27 @@ Para isso, precisará criar funções construtoras no modelo `Pseudoclassical In
     idade: 19, //em meses
     cor: "branco e laranja",
     especie: "hamster",
-    adulto: true,
+    adulto: true, //boolean
     historico: HistoricoMedico
 }
 ```
 
-4. Exemplo de `HistoricoMedico`
+4. Exemplo de `HistoricoMedico` -- 3 propriedades , iniciados com [] - igual em beneficicios.
 ```javascript
 {
-    consultas: [9/7/2023, 13/1/2023, 20/7/2022],
-    vacinas: ["raiva", "v8", "v10"],
-    procedimentos: [{ tipo: "ultrassom", motivo: "dores"}]
+    consultas: [9/7/2023, 13/1/2023, 20/7/2022], //array de datas
+    vacinas: ["raiva", "v8", "v10"], //array com nome das vacinas
+    procedimentos: [{ tipo: "ultrassom", motivo: "dores"}] //arrays do q fez e motivo
 }
 ```
 
 Além disso, será necessário criar alguns métodos:
-- [ ] Todos os tipos de animais precisam de um método `vacinar()`, que receba uma nova vacina e adicione no histórico do bichinho.
-- [ ] Todos os animais precisam de um método `consultar()`, que adicione uma nova consulta ao histórico. As consultas devem ser mantidas em ordem cronológica reversa, sendo a primeira da lista sempre a mais recente.
-- [ ] `Gatos` precisam do método `miar()` e cachorros precisam do método `latir()`;
+- [ ] Todos os tipos de animais precisam de um método `vacinar()`, que receba uma nova vacina e adicione no histórico do bichinho. //ao receber vacina, entra na array vacina e add o nome da vacina, para todos os animais
+- [ ] Todos os animais precisam de um método `consultar()`, que adicione uma nova consulta ao histórico (add uma nova data de consulta na array de historico, mantidas na ordem cronologica reversa - mais recent pra mais antiga). As consultas devem ser mantidas em ordem cronológica reversa, sendo a primeira da lista sempre a mais recente.
+- [ ] FALTA A IMPLEMENTAÇÃO DOS PROCEDIMENTOS, BAIXAR O QUE A PROFESSORA VAI SUBIR.
+- [ ] `Gatos` precisam do método `miar()` e cachorros precisam do método `latir()`; -- só console.log mesmo
 - [ ] `AnimalExotico` precisam de um método `ehAdulto` que retorne `true` caso o animal já seja um adulto para a espécie dele e false caso contrário. Sua implementação pode cobrir apenas as seguintes espécies:
+// ver qual a especie e dependedo, coloca true or false, essas são as principais
   - Hamster: adulto aos 2 meses
   - Papagaio: adulto aos 3 anos
   - Calopsita: adulto aos 18 meses

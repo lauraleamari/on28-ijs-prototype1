@@ -6,3 +6,6 @@ employee1.addBenefits('VA');
 employee1.addBenefits('Zenklub');
 employee1.removeBenefits('VA');
 employee1.listBenefits();
+
+employee1.removeBenefits('gympass');
+employee1.listBenefits();

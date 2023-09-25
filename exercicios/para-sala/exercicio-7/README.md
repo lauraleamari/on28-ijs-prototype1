@@ -1,6 +1,6 @@
-# Exercício de Sala 🏫  
+# Exercício de Sala 🏫
 
-- Conteúdo teórico: 
+- Conteúdo teórico:
 [Pseudoclassical Instantiation](https://github.com/reprograma/on21-imersao-js-S5-Prototype-1#pseudoclassical-instantiation)
 
 ## Exercício 7
@@ -10,8 +10,10 @@ Modifique a função criada na questão anterior para utilizar a instanciação�
 Modifique a função para receber também o `número do banco`.
 
 Transferências entre bancos com o número diferente devem cobrar uma taxa (definida por você) na transferência.
+- [ ] acrescetar uma taxa entre bancos diferentes
 
 Crie um outro método para encerrar a conta. Caso a conta possua saldo não é possível encerra-la.
+- [ ] colocar tudo como undefined.
 
 ---
 
