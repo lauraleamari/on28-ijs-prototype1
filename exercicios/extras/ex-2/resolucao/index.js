@@ -11,8 +11,14 @@ aluna2.adicionarNota(7.8);
 aluna2.adicionarNota(8.0);
 aluna2.exibirInformacoes();
 
+const aluna3 = new Aluna('Carolina', '20220201');
+aluna2.adicionarNota(9.2);
+aluna2.adicionarNota(7.9);
+aluna2.exibirInformacoes();
+
 const turmaA = new Turma();
 turmaA.adicionarAluna(aluna1);
 turmaA.adicionarAluna(aluna2);
+turmaA.adicionarAluna(aluna3);
 
 turmaA.exibirListaAlunas();
